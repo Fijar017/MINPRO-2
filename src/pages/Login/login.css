@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    max-width: 100%;
+    height: 100vh;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url("https://wallpaperaccess.com/full/6060259.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+
+.before-modal {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.welcome {
+    text-align:center;
+    color:#fff;
+}
+
+.click-btn {
+    background-color: rgb(133, 33, 33);
+    border: .5px solid rgba(8,180,226,255);
+    border-radius: 20px;
+    width: 200px;
+}
+
+.btn-secondary {
+    --bs-btn-hover-bg: rgb(0, 0, 0);
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: 1px solid #fff;
+}
+
+/* Margin */
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/* Sign In Modal */
+.modal {
+    --bs-modal-bg: none !important;
+    backdrop-filter: blur(5px) !important;
+}
+
+.modal-header {
+    padding: 0px;
+    border-bottom: none;
+}
+
+.modal-content {
+    transform:translateY(30%);
+    right: 10%;
+
+    width:400px !important;
+    position:absolute;
+    box-shadow: 1.3rem 1rem 1rem rgb(62, 62, 62, 0.3);
+    border-top-color: rgba(225, 225, 225, 0.5);
+    border-left-color: rgba(225, 225, 225, 0.5);
+    border-bottom-color: rgba(225, 225, 225, 0.1);
+    border-right-color: rgba(225, 225, 225, 0.1);
+    border-radius: 8px;
+}
+
+.login-format {
+    padding: 30px 24px;
+    color: white;
+    align-items: center;
+    width: 400px;
+    background-image:linear-gradient(rgb(0 0 0 / 51%), rgb(147 52 52 / 74%)) !important;;
+    -webkit-backdrop-filter: blur(5px);  
+    backdrop-filter: blur(5px);
+    box-shadow: 1.3rem 1rem 1rem rgb(62, 62, 62, 0.3);
+    border-top-color: rgba(225, 225, 225, 0.718);
+    border-left-color: rgba(225, 225, 225, 0.75);
+    border-bottom-color: rgba(225, 225, 225, 0.1);
+    border-right-color: rgba(225, 225, 225, 0.1);
+    border-radius: 8px;
+}
+
+.signin-title {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.582);
+}
+
+
+.login-input {
+    padding: 13px 20px;
+    width: 352px;
+    height: 45px;
+    background: rgb(5 7 8);
+
+    border: solid #dc3545;
+    border-radius: 8px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #f2f2f2;
+}
+
+.no-input {
+    font-weight: 500;
+    margin-top: 3px;
+    color: #ff1111;
+}
+
+.eye-fill {
+    position:relative;
+    top: 262.2px;
+    left: 325px;
+    color: #ffffff97;
+    cursor: pointer;   
+}
+
+
+.signin-btn {
+    padding: 5px 5px;
+    width: 100px;
+    height: 40px;
+    border-radius:8px;
+    font-weight: 600;
+    margin-top: 20px;
+
+    background: rgb(55 21 20);
+    color: #fff;
+    border: none;
+}
+
+.signin-btn:hover {
+    background: rgb(74,188,194);
+    color: rgb(4,36,67);
+    border:none;
+}
+
+.btn-light{
+    --bs-btn-active-bg: rgba(8,180,226,255);
+    --bs-btn-active-color: #fff;
+}
+
+
+@media screen and (max-width: 476px) {
+
+.row {
+    max-width:500;
+}
+.modal-content {
+    transform:translateY(50%);  
+    left: 13%;  
+    width:300px !important;
+}
+
+.login-format {
+    padding: 28px 22px;
+    color: white;
+    align-items: center;
+    width: 300px;
+}
+
+.signin-title {
+    font-size: 20px;
+}
+
+.mobile-login{
+    font-size: 14px;
+}
+
+.mt-10 {
+    margin-top: 5px;
+}
+
+.login-input {
+    padding: 14px 10px;
+    width: 250px;
+    height: 10px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.no-input {
+    font-size: 14px;
+    margin-top: 2px;
+    margin-bottom:2px;
+}
+
+.show-password{
+    font-size: 13px;
+}
+
+.signin-btn {
+    padding: 5px 5px;
+    width: 250px;
+    height: 30px;
+    font-size:14px;
+}
+
+.signin-btn:hover {
+    background: rgb(74,188,194);
+    color: rgb(4,36,67);
+    border:none;
+}
+
+.btn-light{
+    --bs-btn-active-bg: rgba(8,180,226,255);
+    --bs-btn-active-color: #fff;
+}
+}
+
+/* Phone II */ 
+@media screen and (max-width: 375px) {
+    /* Sign In Modal */
+    .modal-content {
+        left: 7%;  
+    }
+}
