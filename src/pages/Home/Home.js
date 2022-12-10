@@ -14,7 +14,7 @@ const [popularMovies, setPopularMovies] = useState([])
       return (
         <div className="Movie-wrapper" key={i}>
         <div className="Movie-title">{movie.title}</div>
-        <img className="Movie-Image" src={`${process.env.REACT_APP_BASEIMGURL}/${movie.poster_path}`}/>
+        <img className="Movie-Image" src={`${process.env.REACT_APP_BASEIMGURL}/${movie.poster_path}`} alt="gambar"/>
         <div className="Movie-overview">overview: {movie.overview}</div>
         <div className="Movie-id">id: {movie.id}</div>
         <div className="Movie-popularity">popularity: {movie.popularity}</div>
